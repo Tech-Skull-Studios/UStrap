@@ -197,39 +197,44 @@
   --percent-80: 80%;
   --percent-90: 90%;
   --percent-100: 100%;
+
+}
+
+* {
+  -unity-font: url("/Assets/Fonts/Normal/Segoe UI.ttf");
 }
 
 /* TEXT COLORS
 */
 .text-primary {
-    color: var(--color-primary);
+  color: var(--color-primary);
 }
 .text-secondary {
-    color: var(--color-secondary);
+  color: var(--color-secondary);
 }
 .text-success {
-    color: var(--color-success);
+  color: var(--color-success);
 }
 .text-danger {
-    color: var(--color-danger);
+  color: var(--color-danger);
 }
 .text-warning {
-    color: var(--color-warning);
+  color: var(--color-warning);
 }
 .text-info {
-    color: var(--color-info);
+  color: var(--color-info);
 }
 .text-light {
-    color: var(--color-light);
+  color: var(--color-light);
 }
 .text-dark {
-    color: var(--color-dark);
+  color: var(--color-dark);
 }
 .text-muted {
-    color: var(--color-muted);
+  color: var(--color-muted);
 }
 .text-white {
-    color: var(--color-white);
+  color: var(--color-white);
 }
 
 /* BACKGROUND COLORS
