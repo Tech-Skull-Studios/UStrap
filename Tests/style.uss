@@ -1,0 +1,3 @@
+.test {
+    height: var(--percent-25);
+}

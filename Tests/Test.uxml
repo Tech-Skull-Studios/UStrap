@@ -1,0 +1,7 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="False">
+    <Style src="/Assets/ustrap.uss" />
+    <Style src="style.uss" />
+    <ui:VisualElement name="container" class="container-fluid">
+        <ui:Button text="Button" display-tooltip-when-elided="true" class="btn btn-danger" style="height: 72px;" />
+    </ui:VisualElement>
+</ui:UXML>
