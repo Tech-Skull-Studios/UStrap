@@ -1,16 +1,15 @@
 <ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="False">
-    <Style src="/Assets/ustrap.uss" />
-    <Style src="/Assets/Tests/style.uss" />
+    <Style src="/Assets/Resources/ustrap.uss" />
     <ui:VisualElement name="container" class="container-fluid">
-        <ui:Label text="Primary Text" display-tooltip-when-elided="true" class="text-primary h5" />
-        <ui:Label text="Secondary Text" display-tooltip-when-elided="true" class="text-secondary h5" />
-        <ui:Label text="Success Text" display-tooltip-when-elided="true" class="text-success h5" />
-        <ui:Label text="Danger Text" display-tooltip-when-elided="true" class="text-danger h5" />
-        <ui:Label text="Warning Text" display-tooltip-when-elided="true" class="text-warning h5" />
-        <ui:Label text="Info Text" display-tooltip-when-elided="true" class="text-info h5" />
-        <ui:Label text="Light Text" display-tooltip-when-elided="true" class="text-light h5" />
-        <ui:Label text="Dark Text" display-tooltip-when-elided="true" class="text-dark h5" />
-        <ui:Label text="Muted Text" display-tooltip-when-elided="true" class="text-muted h5" />
-        <ui:Label text="White Text" display-tooltip-when-elided="true" class="text-white h5" />
+        <ui:Label text="Primary Text" display-tooltip-when-elided="true" class="text-primary h3" />
+        <ui:Label text="Secondary Text" display-tooltip-when-elided="true" class="text-secondary h3" />
+        <ui:Label text="Success Text" display-tooltip-when-elided="true" class="text-success h3" />
+        <ui:Label text="Danger Text" display-tooltip-when-elided="true" class="text-danger h3" />
+        <ui:Label text="Warning Text" display-tooltip-when-elided="true" class="text-warning h3" />
+        <ui:Label text="Info Text" display-tooltip-when-elided="true" class="text-info h3" />
+        <ui:Label text="Light Text" display-tooltip-when-elided="true" class="text-light h3" />
+        <ui:Label text="Dark Text" display-tooltip-when-elided="true" class="text-dark h3" />
+        <ui:Label text="Muted Text" display-tooltip-when-elided="true" class="text-muted h3" />
+        <ui:Label text="White Text" display-tooltip-when-elided="true" class="text-white h3" />
     </ui:VisualElement>
 </ui:UXML>

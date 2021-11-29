@@ -1,5 +1,5 @@
 <ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="False">
-    <Style src="/Assets/ustrap.uss" />
+    <Style src="/Assets/Resources/ustrap.uss" />
     <Style src="/Assets/Tests/style.uss" />
     <ui:VisualElement name="container" class="container-fluid">
         <ui:Label text="h1 Label" display-tooltip-when-elided="true" class="h1" />
