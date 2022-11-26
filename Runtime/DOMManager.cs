@@ -38,7 +38,7 @@ namespace UStrap
                 }
             });
 
-            RemoveComponent(QueryType.Name, "button-primary");
+            RemoveComponent(QueryType.Name, "button-secondary");
         }
 
         /// <summary>
