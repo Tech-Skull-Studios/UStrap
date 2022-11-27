@@ -1,0 +1,8 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="False">
+    <Style src="/Assets/Scripts/Resources/ustrap.uss" />
+    <Style src="style.uss" />
+    <ui:VisualElement class="table-primary" style="height: 284px;">
+        <ui:Button text="Button" display-tooltip-when-elided="true" class="btn btn-secondary" />
+        <ui:Label text="https://docs.unity3d.com/Manual/UIE-USS-SupportedProperties.html" display-tooltip-when-elided="true" class="link" />
+    </ui:VisualElement>
+</ui:UXML>
