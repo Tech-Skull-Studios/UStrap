@@ -1,4 +1,4 @@
 <ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="False">
-    <Style src="/Assets/Resources/ustrap.uss" />
+    <Style src="/Assets/Scripts/Resources/ustrap.uss" />
     <ui:Button text="Primary Button" display-tooltip-when-elided="true" name="primary-button" class="btn btn-primary" style="width: auto; height: auto;" />
 </ui:UXML>

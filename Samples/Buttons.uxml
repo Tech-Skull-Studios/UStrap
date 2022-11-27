@@ -1,5 +1,5 @@
 <ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
-    <Style src="/Assets/Resources/ustrap.uss" />
+    <Style src="/Assets/Scripts/Resources/ustrap.uss" />
     <ui:VisualElement name="container" class="container-fluid w-75">
         <ui:Button text="Primary Button" display-tooltip-when-elided="true" name="primary-button" class="btn btn-primary" style="width: auto; height: auto;" />
         <ui:Button text="Secondary Button" display-tooltip-when-elided="true" name="secondary-button" class="btn-seconday btn" style="width: auto; height: auto;" />
