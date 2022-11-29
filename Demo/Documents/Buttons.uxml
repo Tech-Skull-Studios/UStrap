@@ -1,0 +1,16 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="/Assets/Scripts/Resources/ustrap.uss" />
+    <ui:VisualElement name="container" class="container-fluid w-75" style="padding-left: 20px; padding-right: 20px; padding-top: 20px; padding-bottom: 20px;">
+        <ui:Button text="Primary Button" name="primary-button" display-tooltip-when-elided="true" tooltip="test" class="btn btn-primary" style="width: auto; height: auto; min-height: 30px; font-size: 24px;" />
+        <ui:Button text="Secondary Button" display-tooltip-when-elided="true" name="secondary-button" class="btn btn-secondary" style="width: auto; height: auto; min-height: 30px; font-size: 24px;" />
+        <ui:Button text="Success Button" display-tooltip-when-elided="true" name="success-button" class="btn btn-success" style="width: auto; height: auto; min-height: 30px; font-size: 24px;" />
+        <ui:Button text="Warning Button" display-tooltip-when-elided="true" name="warning-button" class="btn btn-warning" style="width: auto; height: auto; min-height: 30px; font-size: 24px;" />
+        <ui:Button text="Danger Button" display-tooltip-when-elided="true" name="danger-button" class="btn btn-danger" style="width: auto; height: auto; min-height: 30px; font-size: 24px;" />
+        <ui:Button text="Info Button" display-tooltip-when-elided="true" name="info-button" class="btn btn-info" style="width: auto; height: auto; min-height: 30px; font-size: 24px;" />
+        <ui:Button text="Light Button" display-tooltip-when-elided="true" name="light-button" class="btn btn-light" style="width: auto; height: auto; min-height: 30px; font-size: 24px;" />
+        <ui:Button text="Dark Button" display-tooltip-when-elided="true" name="dark-button" class="btn btn-dark" style="width: auto; height: auto; min-height: 30px; font-size: 24px;" />
+        <ui:Button text="Muted Button" display-tooltip-when-elided="true" name="muted-button" class="btn btn-muted" style="width: auto; height: auto; min-height: 30px; font-size: 24px;" />
+        <ui:Button text="White Button" display-tooltip-when-elided="true" name="white-button" class="btn btn-white" style="width: auto; height: auto; min-height: 30px; font-size: 24px;" />
+        <ui:Button text="Black Button" display-tooltip-when-elided="true" name="black-button" class="btn btn-black" style="width: auto; height: auto; min-height: 30px; font-size: 24px;" />
+    </ui:VisualElement>
+</ui:UXML>

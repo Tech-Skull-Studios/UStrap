@@ -1,4 +1,12 @@
-﻿using System;
+﻿/*
+ USTRAP CLASS
+ DOM
+ v1.0
+ LAST EDITED: SUNDAY NOVEMBER 27, 2022
+ COPYRIGHT © TECH SKULL STUDIOS
+*/
+
+using System;
 using UnityEngine.UIElements;
 
 namespace UStrap

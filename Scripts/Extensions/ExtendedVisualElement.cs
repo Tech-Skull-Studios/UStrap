@@ -11,6 +11,9 @@ using UnityEngine.UIElements;
 
 namespace UStrap.Extensions
 {
+    /// <summary>
+    /// Extends the functionality of VisualElements
+    /// </summary>
     public static class ExtendedVisualElement
     {
         /// <summary>

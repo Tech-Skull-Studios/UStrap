@@ -1,0 +1,35 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="False">
+    <Style src="/Assets/Scripts/Resources/ustrap.uss" />
+    <ui:VisualElement name="container" class="container-fluid mw-100 w-100 mh-100 h-100 p-0" style="height: 900px;">
+        <ui:VisualElement name="100-percent" class="position-absolute w-100 h-100 align-self-center" style="background-color: rgb(0, 0, 0);">
+            <ui:Label text="w-100 h-100" display-tooltip-when-elided="true" style="-unity-text-align: middle-center; height: 5%; color: rgb(255, 255, 255);  font-size: 18px;" />
+        </ui:VisualElement>
+        <ui:VisualElement name="90-percent" class="position-absolute w-90 h-90 align-self-center" style="background-color: rgb(33, 37, 41); top: 5%;">
+            <ui:Label text="w-90 h-90" display-tooltip-when-elided="true" style="-unity-text-align: middle-center; height: 5%; color: rgb(233, 236, 239);  font-size: 18px;" />
+        </ui:VisualElement>
+        <ui:VisualElement name="80-percent" class="position-absolute w-80 h-80 align-self-center" style="background-color: rgb(52, 58, 64); top: 10%;">
+            <ui:Label text="w-80 h-80" display-tooltip-when-elided="true" style="-unity-text-align: middle-center; height: 6%; color: rgb(222, 226, 230);  font-size: 18px;" />
+        </ui:VisualElement>
+        <ui:VisualElement name="70-percent" class="position-absolute w-70 h-70 align-self-center" style="background-color: rgb(73, 80, 87); top: 15%;">
+            <ui:Label text="w-70 h-70" display-tooltip-when-elided="true" style="-unity-text-align: middle-center; height: 7%; color: rgb(222, 226, 230);  font-size: 18px;" />
+        </ui:VisualElement>
+        <ui:VisualElement name="60-percent" class="position-absolute w-60 h-60 align-self-center" style="background-color: rgb(108, 117, 125); top: 20%;">
+            <ui:Label text="w-60 h-60" display-tooltip-when-elided="true" style="-unity-text-align: middle-center; height: 8%; color: rgb(206, 212, 218);  font-size: 18px;" />
+        </ui:VisualElement>
+        <ui:VisualElement name="50-percent" class="position-absolute w-50 h-50 align-self-center" style="background-color: rgb(173, 181, 189); top: 25%;">
+            <ui:Label text="w-50 h-50" display-tooltip-when-elided="true" style="-unity-text-align: middle-center; height: 10%; color: rgb(0, 0, 0);  font-size: 18px;" />
+        </ui:VisualElement>
+        <ui:VisualElement name="40-percent" class="position-absolute w-40 h-40 align-self-center" style="background-color: rgb(206, 212, 218); top: 30%;">
+            <ui:Label text="w-40 h-40" display-tooltip-when-elided="true" style="-unity-text-align: middle-center; height: 12%; color: rgb(73, 80, 87);  font-size: 18px;" />
+        </ui:VisualElement>
+        <ui:VisualElement name="30-percent" class="position-absolute w-30 h-30 align-self-center" style="background-color: rgb(222, 226, 230); top: 35%;">
+            <ui:Label text="w-30 h-30" display-tooltip-when-elided="true" style="height: 17%; -unity-text-align: middle-center; color: rgb(52, 58, 64);  font-size: 18px;" />
+        </ui:VisualElement>
+        <ui:VisualElement name="20-percent" class="position-absolute w-20 h-20 align-self-center" style="background-color: rgb(233, 236, 239); top: 40%;">
+            <ui:Label text="w-20 h-20" display-tooltip-when-elided="true" style="-unity-text-align: middle-center; color: rgb(33, 37, 41); height: 26%;  font-size: 18px;" />
+        </ui:VisualElement>
+        <ui:VisualElement name="10-percent" class="position-absolute w-10 h-10 align-self-center" style="background-color: rgb(248, 249, 250); align-items: center; justify-content: center; top: 45%;">
+            <ui:Label text="w-10 h-10" display-tooltip-when-elided="true" class="text-black" style="-unity-text-align: middle-center; font-size: 18px;" />
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>

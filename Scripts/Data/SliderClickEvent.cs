@@ -1,8 +1,8 @@
 ﻿/*
  USTRAP
  DATA CLASS
- BUTTON CLICK EVENT
- v1.1
+ SLIDER CLICK EVENT
+ v1.0
  LAST EDITED: TUESDAY NOVEMBER 29, 2022
  COPYRIGHT © TECH SKULL STUDIOS
 */
@@ -13,10 +13,10 @@ using UnityEngine.UIElements;
 namespace UStrap.Data
 {
     /// <summary>
-    /// Wrapper for button events in the inspector.
+    /// Wrapper for slider events in the inspector.
     /// </summary>
     [Serializable]
-    public class ButtonClickEvent : UIElementClickEvent<Button>
-    { 
+    public class SliderClickEvent : UIElementClickEvent<Slider>
+    {
     }
 }
