@@ -1,9 +1,9 @@
 ﻿/*
  USTRAP
  DATA CLASS
- SLIDER CLICK EVENT
+ TOGGLE EVENT
  v1.0
- LAST EDITED: TUESDAY NOVEMBER 29, 2022
+ LAST EDITED: MONDAY DECEMBER 19, 2022
  COPYRIGHT © TECH SKULL STUDIOS
 */
 
@@ -13,10 +13,10 @@ using UnityEngine.UIElements;
 namespace UStrap.Data
 {
     /// <summary>
-    /// Wrapper for slider events in the inspector.
+    /// Wrapper for toggle events in the inspector.
     /// </summary>
     [Serializable]
-    public class SliderClickEvent : UIElementClickEvent<Slider>
+    public class ToggleEvent : UIElemementValueChangedEvent<Toggle, bool>
     {
     }
 }

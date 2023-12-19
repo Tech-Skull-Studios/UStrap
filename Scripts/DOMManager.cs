@@ -1,8 +1,8 @@
 /*
  USTRAP CLASS
  DOM MANAGER
- v1.1
- LAST EDITED: TUESDAY NOVEMBER 29, 2022
+ v1.2
+ LAST EDITED: MONDAY DECEMBER 19, 2022
  COPYRIGHT © TECH SKULL STUDIOS
 */
 
@@ -40,7 +40,24 @@ namespace UStrap
         [SerializeField] private Vector2 HoverCursorHotspot;
         
         [Header("Events")]
-        [SerializeField] private ButtonClickEvent[] ButtonEvents;
+        [SerializeField] private ButtonEvent[] ButtonEvents;
+        [SerializeField] private ToggleEvent[] ToggleEvents;
+        [SerializeField] private TextFieldEvent[] TextFieldEvents;
+        [SerializeField] private SliderEvent[] SliderEvents;
+        [SerializeField] private SliderEventInt[] IntSliderEvents;
+        [SerializeField] private SliderEventMinMax[] MinMaxSliderEvents;
+        [SerializeField] private LabelEvent[] LabelEvents;
+        [SerializeField] private ScrollerEvent[] ScrollerEvents;
+        [SerializeField] private FoldoutEvent[] FoldoutEvents;
+
+        private VisualElement cursor;
+
+        private void UpdateCursorPosition()
+        {
+            if (cursor == null) return;
+            cursor.style.left = 0;
+            cursor.style.top = 0;
+        }
 
         #endregion
 
@@ -54,7 +71,7 @@ namespace UStrap
             //    Destroy(gameObject);
             //    return;
             //}
-            //
+            
             //Instance = this;
             //DontDestroyOnLoad(gameObject);
             if (OpensDocumentOnAwake)
@@ -72,33 +89,80 @@ namespace UStrap
                 _DOM = document;
                 SwapCursor(NormalCursor, NormalCursorHotspot);
 
-                //Handle Button Events
-                foreach (var _event in ButtonEvents)
-                {
-                    var btn = GetElement<Button>(_event.QueryTag);
-                    if (btn == null) continue; //Button was not found
-                    //_event.RegisterEvents(btn);
+                EventRegistrar();
 
-                    btn.clicked += () =>
-                    {
-                        _event.OnClick?.Invoke(btn);
-                    };
-                    btn.RegisterCallback<MouseOverEvent>((type) =>
-                    {
-                        _event.OnMouseEnter?.Invoke(btn);
-                        SwapCursor(HoverCursor, HoverCursorHotspot);
-                    });
-                    btn.RegisterCallback<MouseOutEvent>((type) =>
-                    {
-                        _event.OnMouseExit?.Invoke(btn);
-                        SwapCursor(NormalCursor, NormalCursorHotspot);
-                    });
-                }
-                
                 //RemoveElement("#container");
                 HideElement("#secondary-button");
                 //ShowElement("#secondary-button");
             });
+        }
+
+        private void EventRegistrar()
+        {
+            //Handle Button Events
+            RegisterEventToElement(ButtonEvents);
+            //Handle Toggle Events
+            RegisterEventToElement(ToggleEvents);
+            //Handle TextField Events
+            RegisterEventToElement(TextFieldEvents);
+            //Handle Slider Events
+            RegisterEventToElement(SliderEvents);
+            //Handle Int Slider Events
+            RegisterEventToElement(IntSliderEvents);
+            //Handle Min Max Slider Events
+            RegisterEventToElement(MinMaxSliderEvents);
+            //Handle Label Events
+            RegisterEventToElement(LabelEvents);
+            //Handle Scroller Events
+            RegisterEventToElement(ScrollerEvents);
+            //Handle Foldout Events
+            RegisterEventToElement(FoldoutEvents);
+
+            //foreach (var _event in ButtonEvents)
+            //{
+            //    var btn = GetElement<Button>(_event.queryTag);
+            //    if (btn == null) continue; //Button was not found
+            //                               //_event.RegisterEvents(btn);
+            //
+            //    //btn.clicked += () =>
+            //    //{
+            //    //    _event.OnClick?.Invoke(btn);
+            //    //};
+            //    //btn.RegisterCallback<MouseOverEvent>((type) =>
+            //    //{
+            //    //    _event.OnMouseEnter?.Invoke(btn);
+            //    //    SwapCursor(HoverCursor, HoverCursorHotspot);
+            //    //});
+            //    //btn.RegisterCallback<MouseOutEvent>((type) =>
+            //    //{
+            //    //    _event.OnMouseExit?.Invoke(btn);
+            //    //    SwapCursor(NormalCursor, NormalCursorHotspot);
+            //    //});
+            //}
+        }
+
+        private void RegisterEventToElement<Type>(UIElementClickEvent<Type>[] events)
+        where Type: VisualElement
+        {
+            foreach (var _event in events)
+            {
+                var element = GetElement<Type>(_event.queryTag);
+                if (element == null) continue; //element was not found
+                _event.RegisterEvents(element);
+
+                if (element is Button
+                    || element is TextField
+                    || element is Slider
+                    || element is SliderInt
+                    || element is MinMaxSlider
+                    || element is Scroller
+                    || element is Toggle
+                )
+                {
+                    element.RegisterCallback<MouseOverEvent>(_ => SwapCursor(HoverCursor, HoverCursorHotspot));
+                    element.RegisterCallback<MouseOutEvent>(_ => SwapCursor(NormalCursor, NormalCursorHotspot));
+                }
+            }
         }
 
         /// <summary>

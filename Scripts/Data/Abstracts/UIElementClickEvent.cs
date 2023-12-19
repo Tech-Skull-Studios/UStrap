@@ -2,12 +2,13 @@
  USTRAP
  DATA CLASS
  UI ELEMENT CLICK EVENT
- v1.0
- LAST EDITED: TUESDAY NOVEMBER 29, 2022
+ v1.1
+ LAST EDITED: MONDAY DECEMBER 19, 2022
  COPYRIGHT © TECH SKULL STUDIOS
 */
 
 using System;
+using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.UIElements;
 
@@ -18,9 +19,15 @@ namespace UStrap.Data
     /// </summary>
     /// <typeparam name="Element">Type of VisualElement</typeparam>
     [Serializable]
-    public abstract class UIElementClickEvent<Element> where Element : VisualElement
+    public abstract class UIElementClickEvent<Element> : IQuery
+    where Element : VisualElement
     {
-        public string QueryTag;
+        /// <summary>
+        /// The tag used to query the element.
+        /// </summary>
+        public string queryTag => QueryTag;
+        [SerializeField] string QueryTag;
+        
         public UnityEvent<Element> OnClick;
         public UnityEvent<Element> OnRelease;
         public UnityEvent<Element> OnMouseEnter;
@@ -30,7 +37,7 @@ namespace UStrap.Data
         /// Registers the inspector events to the element given.
         /// </summary>
         /// <param name="element">The element to register the events to.</param>
-        public void RegisterEvents(Element element)
+        public virtual void RegisterEvents(Element element)
         {
             if (element == null)
                 throw new NullReferenceException("element");

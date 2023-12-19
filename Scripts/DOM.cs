@@ -34,7 +34,7 @@ namespace UStrap
         {
             //Assign the DOM back to the root
             root.rootVisualElement.Clear();
-            root.rootVisualElement.Add(Tree as VisualElement);
+            root.rootVisualElement.Add(Tree);
         }
     }
 }

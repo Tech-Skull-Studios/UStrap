@@ -1,9 +1,9 @@
 ﻿/*
  USTRAP
  DATA CLASS
- BUTTON CLICK EVENT
- v1.1
- LAST EDITED: TUESDAY NOVEMBER 29, 2022
+ FOLDOUT EVENT
+ v1.0
+ LAST EDITED: MONDAY DECEMBER 19, 2022
  COPYRIGHT © TECH SKULL STUDIOS
 */
 
@@ -13,10 +13,10 @@ using UnityEngine.UIElements;
 namespace UStrap.Data
 {
     /// <summary>
-    /// Wrapper for button events in the inspector.
+    /// Wrapper for foldout events in the inspector.
     /// </summary>
     [Serializable]
-    public class ButtonClickEvent : UIElementClickEvent<Button>
-    { 
+    public class FoldoutEvent : UIElemementValueChangedEvent<Foldout, bool>
+    {
     }
 }
