@@ -1,0 +1,16 @@
+{
+  "name": "com.techskullstudios.ustrap",
+  "version": "1.0.0",
+  "displayName": "UStrap",
+  "description": "Bootstrap Inspired Implementation For Unity UI Toolkit",
+  "unity": "2023.2",
+  "dependencies": {
+  },
+  "author": {
+    "name": "Tech Skull Studios",
+    "email": "pocketbuggames@gmail.com",
+    "url": "http://techskullstudios.com/"
+  },
+  "samples": [
+  ]
+}
